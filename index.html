@@ -1,0 +1,424 @@
+<html>
+<head>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery-3.2.0.min.js"></script>
+	<script src="js/imagelightbox.min.js"></script>
+    <script src="js/js-image-slider.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script>
+$(document).ready(function() {
+$("#myBtn").hide();
+  $(".jumper").on("click", function( e ) {
+$("#myBtn").show();
+
+    e.preventDefault();
+
+    $("body, html").animate({ 
+      scrollTop: $( $(this).attr('href') ).offset().top 
+    }, 600);
+
+  });
+});
+
+function openCity(cityName) {
+    var i;
+    var x = document.getElementsByClassName("city");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    document.getElementById(cityName).style.display = "block";  
+}
+</script>
+</head>
+<body>
+
+<nav class="navbar navbar-default" id="top">
+
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+
+	<!--<div class="col s3">
+      <a class="navbar-brand" href="#">
+					<img src="images/bellezza.jpg" class="img-responsive">
+				</a>
+			</div>-->
+    </div>
+<div class="logo"><a><h2>Bellezza Salon</h2></a></div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#home" class="active" >HOME</a></li>
+        <li><a class="jumper" href="#services">SERVICES</a></li>
+        <li><a class="jumper" href="#specialize">ABOUT</a></li>
+        <li><a class="jumper" href="#gallery">GALLERY</a></li>
+        <li><a class="jumper" href="#team">STAFF</a></li>
+        <li><a class="jumper" href="#contact" >CONTACT</a></li>
+      </ul>
+	    </div><!-- /.navbar-collapse -->
+		  <hr>
+
+  </div><!-- /.container-fluid -->
+	<div class="about" id="about"><h1>FIT & SPA</h1></div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</nav>
+<!--services-->
+<div class="services-agile-w3l" id="services">
+<h3 class="tittle-w3l">Our Services
+				<span class="heading-style">
+					<i></i>
+					<i></i>
+					<i></i>
+				</span>
+			</h3>		<div class="services-agile-w3l-right-grids">
+			<div class="col-xs-4 services-agile-w3l-right-grid grid-1">
+				<div class="services-agile-w3l-icon">
+					<span class="fa fa-female" aria-hidden="true"></span>
+				</div>
+				<div class="services-agile-w3l-icon-info">
+					<h5>Skin</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed orci enim, posuere sed.</p>
+				</div>
+			</div>
+			<div class="col-xs-4 services-agile-w3l-right-grid grid-2">
+				<div class="services-agile-w3l-icon">
+					<span class="fa fa-bed" aria-hidden="true"></span>
+				</div>
+				<div class="services-agile-w3l-icon-info">
+					<h5>Body</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed orci enim, posuere sed.</p>
+				</div>
+			</div>
+			<div class="col-xs-4 services-agile-w3l-right-grid grid-3">
+				<div class="services-agile-w3l-icon">
+					<span class="fa fa-scissors" aria-hidden="true"></span>
+				</div>
+				<div class="services-agile-w3l-icon-info">
+					<h5>Hair Cut</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed orci enim, posuere sed.</p>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="services-agile-w3l-right-grids">
+			<div class="col-xs-4 services-agile-w3l-right-grid grid-4">
+				<div class="services-agile-w3l-icon">
+					<span class="fa fa-cubes" aria-hidden="true"></span>
+				</div>
+				<div class="services-agile-w3l-icon-info">
+					<h5>Nails</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed orci enim, posuere sed.</p>
+				</div>
+			</div>
+			<div class="col-xs-4 services-agile-w3l-right-grid grid-5">
+				<div class="services-agile-w3l-icon">
+					<span class="fa fa-code-fork" aria-hidden="true"></span>
+				</div>
+				<div class="services-agile-w3l-icon-info">
+					<h5>Makeup</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed orci enim, posuere sed.</p>
+				</div>
+			</div>
+			<div class="col-xs-4 services-agile-w3l-right-grid grid-6">
+				<div class="services-agile-w3l-icon">
+					<span class="fa fa-external-link" aria-hidden="true"></span>
+				</div>
+				<div class="services-agile-w3l-icon-info">
+					<h5>Wax</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed orci enim, posuere sed.</p>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<div class="specialize" id="specialize">
+	    <div class="container">
+			<div class="col-md-6 spgrids">
+				<h3>We Specialize in</h3>
+			    <h5 class="special">&gt;&gt; Created from natural herbs – Ginseng roots extract</h5>
+			    <h5>&gt;&gt; 100% safe for your skin</h5>
+				<h5>&gt;&gt; Quality product from SpaJone</h5>
+				<h5>&gt;&gt; Special gifts &amp; offers for you</h5>
+				<h5>&gt;&gt; Created by Medical Professionals of SpaJone</h5>
+			</div>
+		</div>
+	</div>
+
+	<!---gallery-->
+	<div class="container" id="gallery">
+	<div class="row">
+	<header class="head_section center_section">
+                <div class="container">
+                    <h2>Our Awesome Gallery</h2>
+                </div><!-- end .container -->
+            </header>
+			<ul class="portfolio-menu" id="filters">
+                        <li class="active"><a onclick="openCity('All')">All</a></li>
+                        <li class=""><a data-filter=".massage" onclick="openCity('massage')">Massage</a></li>
+                        <li class=""><a data-filter=".therapy" onclick="openCity('therapy')">Therapy</a></li>
+                        <li class=""><a data-filter=".mud" onclick="openCity('mud')">Mud</a></li>
+                        <li class=""><a data-filter=".cosmetic" onclick="openCity('cosmetic')">Cosmetic</a></li>
+                    </ul>
+
+
+<div id="All" class="w3-container city">
+  <div class="col-xs-6 col-md-4">
+  <a><img src="images/1.jpg"/></a>
+  </div>  
+  <div class="col-xs-6 col-md-4">
+  <a><img src="images/2.jpg"/></a>
+  </div>  
+  <div class="col-xs-6 col-md-4">
+  <a><img src="images/33.jpg"/></a>
+  </div>  
+  <div class="col-xs-6 col-md-4">
+  <a><img src="images/4.jpg"/></a>
+  </div>  
+  <div class="col-xs-6 col-md-4">
+  <a><img src="images/5.jpg"/></a>
+  </div>  
+  <div class="col-xs-6 col-md-4">
+  <a><img src="images/6.jpg"/></a>
+  </div> 
+  <div class="col-xs-6 col-md-4">
+  <a><img src="images/7.jpg"/></a>
+  </div> 
+  <div class="col-xs-6 col-md-4">
+  <a><img src="images/8.jpg"/></a>
+  </div>  
+  <div class="col-xs-6 col-md-4">
+  <a><img src="images/9.jpg"/></a>
+  </div>
+</div>
+
+<div id="massage" class="w3-container city" style="display:none">
+  <div class="col-xs-6 col-md-4">
+  <a><img src="images/1.jpg"/></a>
+  </div>  
+  <div class="col-xs-6 col-md-4">
+  <a><img src="images/6.jpg"/></a>
+  </div>  
+  <div class="col-xs-6 col-md-4">
+  <a><img src="images/8.jpg"/></a>
+  </div>  
+  <div class="col-xs-6 col-md-4">
+  <a><img src="images/9.jpg"/></a>
+  </div> 
+</div>
+
+<div id="therapy" class="w3-container city" style="display:none">
+  <div class="col-xs-6 col-md-4">
+  <a><img src="images/2.jpg"/></a>
+  </div>  
+  <div class="col-xs-6 col-md-4">
+  <a><img src="images/5.jpg"/></a>
+  </div>  
+  <div class="col-xs-6 col-md-4">
+  <a><img src="images/6.jpg"/></a>
+  </div>  
+  <div class="col-xs-6 col-md-4">
+  <a><img src="images/7.jpg"/></a>
+  </div> 
+</div>
+
+<div id="mud" class="w3-container city" style="display:none">
+  <div class="col-xs-6 col-md-4">
+  <a><img src="images/1.jpg"/></a>
+  </div>  
+  <div class="col-xs-6 col-md-4">
+  <a><img src="images/2.jpg"/></a>
+  </div>  
+  <div class="col-xs-6 col-md-4">
+  <a><img src="images/33.jpg"/></a>
+  </div> 
+  <div class="col-xs-6 col-md-4">
+  <a><img src="images/4.jpg"/></a>
+  </div>  
+  <div class="col-xs-6 col-md-4">
+  <a><img src="images/7.jpg"/></a>
+  </div> 
+</div>
+
+<div id="cosmetic" class="w3-container city" style="display:none">
+  <div class="col-xs-6 col-md-4">
+  <a><img src="images/cos1.jpg"/></a>
+  </div>  
+  <div class="col-xs-6 col-md-4">
+  <a><img src="images/cos2.jpg"/></a>
+  </div>  
+  <div class="col-xs-6 col-md-4">
+  <a><img src="images/cos3.jpg"/></a>
+  </div>  
+  <div class="col-xs-6 col-md-4">
+  <a><img src="images/cos4.jpg"/></a>
+  </div> 
+</div>
+
+
+</div>
+
+	
+	
+	
+	</div>
+	<!--staff-->
+	<div class="staff" id="team">
+		<div class="container">
+			<h3>Our Staff</h3>
+			<div class="staff-top">
+		        <div class="col-md-3 col-sm-3 staff-img staff-img1">
+					<img src="images/15.jpg" alt=" ">
+				</div>
+				<div class="col-md-3 col-sm-3  staff-text  staff-text1">
+					<h4>Jessica Jennifer</h4>
+				    <h5>Spa Therapist </h5>
+					<p>Pellentesque id felis elit. Curabitur efficitur augue leo.</p>
+					<ul>
+						<li><a class="twitter" href="#"></a></li>
+						<li><a class="facebook" href="#"></a></li>
+						<li><a class="pinterest" href="#"></a></li>
+					</ul>	
+			    </div>
+			
+				<div class="col-md-3 col-sm-3  staff-img staff-img2">
+					<img src="images/12.jpeg" alt=" ">
+				</div>
+				<div class="col-md-3 col-sm-3  staff-text  staff-text2">
+					<h4>Kristin Jean</h4>
+					<h5>Beauty Therapist</h5>
+					<p>Pellentesque id felis elit. Curabitur efficitur augue leo.</p>
+					<ul>
+						<li><a class="twitter" href="#"></a></li>
+						<li><a class="facebook" href="#"></a></li>
+						<li><a class="pinterest" href="#"></a></li>
+					</ul>	
+			    </div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="staff-bottom">
+				<div class="col-md-3 col-sm-3  staff-img staff-img3">
+					<img src="images/13.jpg" alt=" ">
+				</div>
+				<div class="col-md-3 col-sm-3   staff-text  staff-text3">
+					<h4>Ashley Rose</h4>
+					<h5>Hair Stylist </h5>
+					<p>Pellentesque id felis elit. Curabitur efficitur augue leo.</p>
+					<ul>
+						<li><a class="twitter" href="#"></a></li>
+						<li><a class="facebook" href="#"></a></li>
+						<li><a class="pinterest" href="#"></a></li>
+					</ul>	
+			    </div>
+			
+				<div class="col-md-3 col-sm-3  staff-img staff-img4">
+					<img src="images/16.jpg" alt=" ">
+				</div>
+				<div class="col-md-3 col-sm-3  staff-text staff-text4">
+					<h4>Dennifer Loha</h4>
+					<h5>Special Treatments </h5>
+					<p>Pellentesque id felis elit. Curabitur efficitur augue leo.</p>
+					<ul>
+						<li><a class="twitter" href="#"></a></li>
+						<li><a class="facebook" href="#"></a></li>
+						<li><a class="pinterest" href="#"></a></li>
+					</ul>	
+			    </div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--contact--->
+	<div class="contact" id="contact">
+		<div class="container">
+		    <div class="col-md-6 col-sm-6 contact-left">
+				<h4>Get in Touch</h4>
+					<div class="phone">
+						<h5>Phone;</h5>
+						<h5>+804 4261 550 601</h5>
+					</div>
+					<div class="mail">
+						<h5>E-mail;</h5>
+						<h5><a href="mailto:info@example.com">mail@example.com</a></h5>
+					</div>
+					<div class="address">
+						<h5>Address;</h5>
+						<h5>#30,SAP STREET,Gayathrinagar,Ameerpet,<br> Hyderabad, Telangana 500038</h5>
+					</div>
+					<br>
+					<ul>
+						<li><a class="twitter" href="#"></a></li>
+						<li><a class="facebook" href="#"></a></li>
+						<li><a class="pinterest" href="#"></a></li>
+					</ul>	
+			</div>
+			<div class="col-md-6 col-sm-6 contact-right">
+				<form action="#" method="post">
+					<input type="text" name="your name" placeholder="YOUR NAME"><br>
+					<input type="text" name="your phone" placeholder="YOUR PHONE"><br>
+					<input type="text" name="your email" placeholder="YOUR EMAIL"><br>
+					<textarea rows="4" cols="50" name="your message" placeholder="YOUR MESSAGE"></textarea>
+					<input type="submit" class="hvr-rectangle-in" value="SEND">
+					<div class="clearfix"></div>
+				</form>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+
+	<!--footer-->
+	<footer class="footer1">
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="footer-desc text-center">
+                        <p>
+                            <a href="/" rel="home" title="Super Dev Resources">Bellezza</a> is a popular SPA for finding<br>awesome . <a href="/about/">Learn More</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <ul class="social">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+
+                <nav class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+                    <div class="input-group input-group-md">
+                      <input type="text" class="form-control" placeholder="Email Address">
+                      <span class="input-group-addon">Subscribe</span>
+                    </div>
+                </nav>
+            </div> <!--/.row--> 
+        </div> <!--/.container--> 
+    </div> <!--/.footer-->
+    
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="pull"> Copyright © <a href="">Rizwan Akram</a>.  All right reserved.</div>
+
+        </div>
+    </div> <!--/.footer-bottom--> 
+</footer>
+
+
+
+	<button onclick="topFunction()" class="jumper" href="#top" id="myBtn" title="Go to top">Top</button>
+
+
+
+
+	</body>
+</html>
